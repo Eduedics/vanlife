@@ -4,8 +4,8 @@ import "./FooterStyles.css"
 
 export default function Footer(){
     return(
-        <div>
-            <p>&copy 2025</p>
+        <div className="footer">
+            <p>van life &copy; 2025</p>
         </div>
     )
 }

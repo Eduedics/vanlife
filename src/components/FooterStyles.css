@@ -1,0 +1,20 @@
+.footer{
+    width: 100%;
+    text-align: center;
+    background: #220a0a;
+    color: hsl(180, 100%, 97%);
+    height: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+@media screen and (max-width:640px) {
+    .footer{
+        padding: 5px 10px;
+        text-transform: lowercase;
+        font-size: 1rem;
+    }
+    
+}
