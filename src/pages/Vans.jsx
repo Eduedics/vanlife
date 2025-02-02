@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar.jsx'
-import Van from '../components/Van.jsx'
+import Van from "../components/Van.jsx"
 import Footer from '../components/Footer.jsx'
 
 

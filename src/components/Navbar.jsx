@@ -11,8 +11,8 @@ export default function Footer(){
             <h1>#vanlife</h1>
             <ul className={`listitems ${isOpen ? "active" : ""}`}>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to = "about/">About</Link></li>
-                <li><Link to = "vans/">Vans</Link></li>
+                <li><Link to = "/about">About</Link></li>
+                <li><Link to = "/vans">Vans</Link></li>
             </ul>
             <div className="hamburger" onClick={()=>setIsOpen(!isOpen)}>
                 {isOpen?<FaTimes size={20}/>: <FaBars size={20} />}
