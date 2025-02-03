@@ -1,5 +1,5 @@
 import './VanStyles.css'
-// import { Link} from "react-router-dom"
+import { Link} from "react-router-dom"
 // import { FaBars, FaTimes } from "react-icons/fa"
 import React from 'react'
 
@@ -14,7 +14,8 @@ export default function Footer(){
         },[]
     )
     return(
-        <div>
+        <Link to="/vans/{myData.id}">
+            <div>
             <h1>Exprole van options</h1>
             {vanData.map( myData=>(
                 <div key={myData.id}>
@@ -31,6 +32,8 @@ export default function Footer(){
             ))
             }
         </div>
+        </Link>
+        
         
         )
         
