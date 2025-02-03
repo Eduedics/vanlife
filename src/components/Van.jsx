@@ -14,7 +14,7 @@ export default function Footer(){
         },[]
     )
     return(
-        <Link to="/vans/{myData.id}">
+        <Link to="/vans/${myData.id}">
             <div>
             <h1>Exprole van options</h1>
             {vanData.map( myData=>(
