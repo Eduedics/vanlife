@@ -14,25 +14,30 @@ export default function Footer(){
         },[]
     )
     return(
-        <Link to="/vans/${myData.id}">
+        
             <div>
             <h1>Exprole van options</h1>
             {vanData.map( myData=>(
+                
                 <div key={myData.id}>
-                    <figure>
-                        <img src={myData.imgUrl} alt='van img'/>
-                        <figcaption>van img</figcaption>
-                    </figure>
-                    <h3>{myData.name}</h3>
-                    <p>{myData.Price}</p>
-                    <div>
-                        <i>{myData.type}</i>
-                    </div>
+                    <Link to={`/vans/${myData.id}`}>
+                        <figure>
+                            <img src={myData.imgUrl} alt='van img'/>
+                            <figcaption>van img</figcaption>
+                        </figure>
+                        <h3>{myData.name}</h3>
+                        <p>{myData.Price}</p>
+                        <div>
+                            <i>{myData.type}</i>
+                        </div>
+                    </Link>
                 </div>
+                
+
             ))
             }
         </div>
-        </Link>
+       
         
         
         )
